@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package car_commute;
+
+option go_package = "github.com/Kyadlapati/hospitality/proto,pb";
+
+message NotifyRequest {
+    string apartment_number = 1;
+    string message = 2;
+}
+message NotifyResponse {
+    bool success = 1;
+}
+
+service CarCommuteService {
+    rpc NotifyResidents(NotifyRequest) returns (NotifyResponse);
+}

@@ -1,0 +1,14 @@
+# Binaries
+*.exe
+*.dll
+*.so
+
+# Logs
+*.log
+
+# Vendor and dependency directories
+vendor/
+node_modules/
+
+# Docker
+*.env
